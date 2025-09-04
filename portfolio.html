@@ -8,18 +8,21 @@
     <script src="portfolio.js" defer></script>
 </head>
 <body>
-    <div class="header">
-        <div class="logo"><p>SEKONGO_<span>DEV</span></p></div>
+    <div class="header" >
+        <div class="logo"><p><a href="#home">SEKONGO_<span>DEV</span></a></p></div>
         <nav>
-            <ul class="nav">
-                <li><a href="">A propos</a></li>
-                <li><a href="">Compétences</a></li>
-                <li><a href="">Projets</a></li>
-                <li><a href="">Services</a></li>
-                <li class="contact"><a href="https://api.whatsapp.com/send?phone=2250153761320&text=Bonjour%20Mr%20SEKONGO%2C%20je%20veux%20en%20savoir%20plus%20sur%20vos%20services%2E" target="_blank">Contactez-Nous</a></li>
+            <ul class="nav" >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#propos">A propos</a></li>
+                <li><a href="#compet">Compétences</a></li>
+                <li><a href="#projet">Projets</a></li>
+                
+                <li class="contact"><a href="https://api.whatsapp.com/send?phone=2250153761320&text=Bonjour%20Mr%20SEKONGO%2C%20je%20veux%20en%20savoir%20plus%20sur%20vos%20services%2E" target="_blank">Contactez-Moi</a></li>
             </ul>
         </nav>
     </div>
+    <hr id="home">
+    
     <div class="body1">
         <div class="texte">
             <p class="t">Salut, Je suis <br><span class="nom">Sekongo Moussa </span></p>
@@ -39,7 +42,7 @@
             <div class="cercle"></div>
         </div>
     </div>
-    <div class="body2">
+    <div class="body2" id="propos">
         <div class="texte">
                
         </div>
@@ -48,14 +51,52 @@
                 <div class="pic"></div>
             </div>
             <div class="contain">
-                <p class="p1"> à propos de moi </p>
-                <div class="contain1">
+                <p id="p1"> à propos de moi </p>
+                <div id="contain1">
                     <p>🧑‍💻 Développeur web et web designer passionné par l’innovation digitale et l’esthétique interactive, je conçois des sites web, des applications dynamiques ainsi que des affiches visuelles pour la communication digitale et imprimée.
                     Mon approche allie technologie moderne et design intuitif pour créer des expériences numériques performantes, visuellement captivantes et adaptées au contexte local.</p>
+                </div>
             </div>
         </div>
     </div>
-        
-    </body>
+    <div class="body3"  id="compet">
+        <div class="competence">Mes compétences</div>
+        <div class="competence-contain">
+            <div class="competence-contain1">
+                <div><img src="logo/html.png" alt=""><p>HTML</p></div>
+                <div><img src="logo/css-3.png" alt=""><p>CSS</p></div>
+                <div><img src="logo/js.png" alt=""><p>JavaScript</p></div>             
+                <div><img src="logo/physics.png" alt=""><p>React JS</p></div>
+                <div><img src="logo/php.png" alt=""><p>PHP</p></div>
+            </div>
+            
+            <div class="competence-contain2">
+                <div><img src="logo/photoshop.png" alt=""><p>Photoshop</p></div>
+                <div><img src="logo/illustrator.png" alt=""><p>Illustrator</p></div>
+                <div><img src="logo/figma.png" alt=""><p>Figma</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="body4" id="projet">
+        <div class="projet">Mes projets</div>
+        <div class="titre">
+            <p class="dev">Developpement Web</p>
+            <p><a href="">Web Design</a></p>
+        </div>
+        <div class="projet-main">
+            <div class="main">
+                <div class="contenu">  
+                    <div class="pr1"> </div>
+                    <p class="ti">Site E-commerce</p>
+                    <p class="icon"><span>voir plus</span></p>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+    <footer>
+        <div class="footer"></div>
+    </footer>
+    
 </body>
 </html>
