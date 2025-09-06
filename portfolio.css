@@ -2,14 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+  
 }
 
 :root {
     --border: 1px solid rgb(232, 228, 228);
     --fond: rgb(61,12,2);
+    --color1: white;
+    --color2: black;
     --principal: rgb(108, 183, 237);
 }
+
+.mode{
+    background-color: white !important;
+    color: black !important;
+}
+
+@media (max-width: 480px){
+    .header{
+        background-color: aqua;
+    }
+    .header .logo{
+        width: 50px;
+        font-size: medium;
+    }
+}
+
 .header{
     /* border: var(--border); */
     display: flex;
@@ -19,7 +37,7 @@
     width: 100%;
     z-index: 2000;
     background: black;
-    color: white;
+    color: var(--color1);
     font-family: 'Roboto',sans-serif;
     justify-content: space-between;
 }
@@ -37,37 +55,58 @@
 }
 .logo a{
     font-family: cursive;
-     color: white;
+     color: black;
      text-decoration: none;
      font-weight: bold;
     cursor: pointer;
     font-size: x-large;
 }
 .logo a span{
-    color: var(--principal);
+    color:rgb(108, 183, 237) ;
+}
+.logo a {
+    color: white;
 }
 nav .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 600px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     height: 100px;
-    margin-right: 100px;
+   
+    margin-left: 300px;
    /*  border: var(--border); */
 }
 
 nav .nav li:hover{
-    border-bottom: 3px solid var(--principal);
+    border-bottom: 3px solid rgb(108, 183, 237);
     transition: .5s ease-in-out;
 }
 
+.header .p {
+   /*  border: 3px solid red; */
+    width: 50px;
+   
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    align-items: center;
+}
+.header .p .img{
+    width: 50px;
+    /* box-shadow: 0 4px 6px rgb(108, 183, 237); */
+    color: white;
+    cursor: pointer;
+    
+}
+
 nav .nav .contact{
-    border: 1px solid var(--principal);
+    border: 1px solid rgb(108, 183, 237);
     border-radius: 10px;
     padding: 5px;
-    box-shadow: 0 4px 6px var(--principal);
+    box-shadow: 0 4px 6px rgb(108, 183, 237);
 }
 
 nav .nav .contact:hover{
@@ -83,8 +122,11 @@ nav .nav a{
 nav .nav li{
     list-style: none;
 }
+
+
+
 .body1{
-    border: var(--border);
+   /*  border: var(--border); */
     width: 100%;
     height:calc(100vh - 100px);
     display: flex;  
@@ -93,8 +135,9 @@ nav .nav li{
     z-index: 1000;
     justify-content: space-between;
     margin-top: 100px;
+    color: var(--color1);
     align-items: center;
-    background: black;
+    background: var(--color2);
     
 }
 .body1 .texte{
@@ -105,7 +148,7 @@ nav .nav li{
     animation: texte 2s ease-in-out;
     justify-content: center;
     flex-direction: column;
-    color: white;
+   
     font-size: xx-large;
    /*  align-items: center; */
 }
@@ -237,6 +280,7 @@ nav .nav li{
 .body1 .texte .contact p img{
     width: 30px;
     background-color: white;
+    box-shadow: 0 2px 2px var(--principal);
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -251,6 +295,11 @@ nav .nav li{
     cursor: pointer;
     width: 300px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-weight: bold;
     margin-left: 150px;
     box-shadow: 0 4px 6px var(--principal);
     margin-top: 20px;
@@ -259,13 +308,27 @@ nav .nav li{
 
 
 .cv a:hover{
-    color:  var(--principal);
-    
+    color:  rgb(108, 183, 237); 
    
 }
 
+.cv:hover{
+     width: 302px;
+     height: 51px;
+}
+.cv p img{
+    width: 30px;
+}
+.cv p{
+     display: flex;
+     justify-content: space-between;
+     font-size: 20px;
+     align-items: center;
+
+}
+
 .cv a{
-    color: white;
+    color: var(--color1);
     text-decoration: none;
 }
 
@@ -282,7 +345,7 @@ nav .nav li{
 .s1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    color: rgb(108, 183, 237);
+    color: var(--principal)
     /* text-transform: uppercase; */
      
 
@@ -290,7 +353,7 @@ nav .nav li{
 .s2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    color: rgb(108, 183, 237);
+    color: var(--principal);
     text-transform: uppercase;
 }
 /* .s3{ 
@@ -301,8 +364,9 @@ nav .nav li{
  .body2{
     width: 100%;
     height: 100vh;
-    border: var(--border);
-    background-color: black;
+   /*  border: var(--border); */
+    background-color: var(--color2);
+    color: var(--color1);
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -313,7 +377,7 @@ nav .nav li{
  .body2 .texte{
     display: block;
     width: 800px;
-    color: white;
+    color: var(--color1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,8 +414,8 @@ nav .nav li{
    overflow: hidden;
     width: 450px;
     /* margin-bottom: 100px; */
-    background: url('images/ic.png');
-    background-color: black;
+    background: url('images/d.png');
+    background-color: var(--color2);
     background-size: cover;
     height: 500px;
     border-radius: 10px;
@@ -366,7 +430,7 @@ nav .nav li{
     opacity: 0;
 }
 .show{
-    color: white;
+    color: var(--color1);
      transition: all 2s ease-in-out;
      animation: anim 2s ease-out;
 }
@@ -420,7 +484,7 @@ nav .nav li{
     color: var(--principal);
 }
 .body2 .propos .contain #contain1 {
-    color: white;
+    color: var(--color1);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     width: 650px;
     /*  border: var(--border); */
@@ -435,9 +499,10 @@ nav .nav li{
 .body3{
      width: 100%;
     height: 100vh;
-    border: 1px solid var(--principal);
-    background-color: black;
+   /*  border: 1px solid var(--principal); */
+    background-color: var(--color2);
     display: flex;
+    color: var(--color1);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -569,12 +634,14 @@ nav .nav li{
 .body4{
     width: 100%;
     height: 100vh;
-     border: var(--border);
-    background-color: black;
+   /*   border: var(--border); */
+    background-color: var(--color2);
     display: flex;
     justify-content: center;
+      color: var(--color1);
     align-items: center;
     flex-direction: column;
+    padding-bottom: 100px;
 }
 
 .body4 .projet{
@@ -634,21 +701,41 @@ nav .nav li{
     
     border: 1px solid var(--principal);
     border-radius: 10px;
-    opacity: 0;
-    
+    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+     animation: anim5 2s ease-in;
      width: 350px;
      transition: all 1s ease-in-out;
     height: 350px;
 }
-.contenu.afficher{
-    opacity: 1 !important;
+.afficher{
+   
+    display: flex !important;
+    animation: anim5 2s ease-out;
     transition: all 1s ease-in-out;
-    pointer-events: auto;
+    
+    
     
 }
+
+@keyframes anim5 {
+    0%{
+        opacity: 0;
+    }
+    33%{
+        opacity: .3;
+    }
+    67%{
+        opacity: .6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 .body4 .projet-main .main .pr1{
     width: 348px;
     height: 200px;
@@ -680,9 +767,11 @@ nav .nav li{
     align-items: center;
 }
 
-.body4 .projet-main .main .icon span{
+
+.body4 .projet-main .main .icon span a{
     
     color: var(--principal);
+    text-decoration: none;
     padding: 10px;
     text-transform: capitalize;
     font-weight: bold;
@@ -692,17 +781,37 @@ nav .nav li{
 }
 
 
-.body4 .projet-main .main .icon span:hover{
-    color: white;
+.body4 .projet-main .main .icon span a:hover{
+    color: var(--color1);
    
 }
 
-
+.contenu2{
+     border: 1px solid var(--principal);
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+     width: 350px;
+     transition: all 1s ease-in-out;
+    height: 350px;
+}
+.forve{
+    display: none !;
+    opacity: 0;
+}
     /* .body4 .projet-main .main div:hover{
         box-shadow:  2px 2px 1px var(--principal);
     }
 
  */
+ .forve2{
+    display: flex;
+ }
+ .afficher2{
+    display: flex !important;
+ }
 
 
 
@@ -713,7 +822,11 @@ nav .nav li{
 
 
 footer{
-    height: 50vh;
-    background-color: rgb(16, 16, 16);
+    height: 10vh;
+    background-color: rgb(18, 18, 18);
+    justify-content: center;
+    display: flex;
+    color: white !important;
+    font-weight: bold;
+    align-items: center;
 }
-

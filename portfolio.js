@@ -59,15 +59,70 @@ window.addEventListener('scroll',()=>{
 })
 
 const contenu=document.querySelector('.contenu');
+const cont=document.querySelector('.contenu2');
 const dev= document.querySelector('.dev');
 
+
 dev.addEventListener('click', ()=>{
-    
-    contenu.classList.toggle('afficher')
-    console.log(contenu)
+    contenu.classList.toggle('afficher');
+    if(contenu.classList.contains('afficher')){
+        cont.classList.add('forve')
+} 
+
+/* else{
+    cont.classList.remove('forve')
+    cont.style.display=''
+} */
+console.log(contenu)
+
+})
+
+
+/* const web= document.querySelector('.web');
+web.addEventListener('click', ()=>{
+    if(contenu.classList.contains('afficher')){
+        cont.classList.add('afficher2');
+        contenu.classList.remove('afficher')
+    else{
+     cont.classList.add('afficher2');
+}
+console.log(cont)
+
+})
+ */
+const border= document.querySelector('body')
+const body1= document.querySelector('.body1')
+
+const img= document.querySelector('.img')
+let modeActif =false;
+img.addEventListener('click', ()=>{
+    if(!modeActif){
+        document.documentElement.style.setProperty('--color1', 'black');
+        document.documentElement.style.setProperty('--color2', 'white');
+        document.documentElement.style.setProperty('--principal', 'black');
+        
+          console.log(modeActif)
+    }else{
+        document.documentElement.style.removeProperty('--color1', 'black');
+        document.documentElement.style.removeProperty('--color2', 'white');
+        document.documentElement.style.removeProperty('--principal', 'black');
+       
+        console.log(modeActif)
+    }
+     modeActif = !modeActif;
 })
 
 
 
 
-})
+
+
+
+
+
+
+
+});
+
+
+
