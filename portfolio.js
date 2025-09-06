@@ -121,6 +121,31 @@ img.addEventListener('click', ()=>{
 
 
 
+const isMobile = window.matchMedia("(max-width: 480px)").matches;
+if (isMobile) {
+  console.log("Affichage mobile actif !");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
 

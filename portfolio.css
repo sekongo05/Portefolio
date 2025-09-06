@@ -13,6 +13,90 @@
     --principal: rgb(108, 183, 237);
 }
 
+
+/* @media screen and (max-width: 480px){
+    .header{
+    display: flex;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    overflow: hidden;
+    background: rgb(136, 133, 133);
+    color: var(--color1);
+    font-family: 'Roboto',sans-serif;
+    justify-content: space-between;
+    }
+} */
+/* @media screen and (max-width: 600px){
+    .header{
+    display: flex;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    overflow: hidden;
+    background: rgb(155, 27, 27);
+    color: var(--color1);
+    font-family: 'Roboto',sans-serif;
+    justify-content: space-between;
+    }
+} */
+/* @media screen and (min-width: 600px){
+    .header{
+    display: flex;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    overflow: hidden;
+    background: rgb(31, 25, 206);
+    color: var(--color1);
+    font-family: 'Roboto',sans-serif;
+    justify-content: space-between;
+    }
+}
+ */
+/* @media screen and (min-width: 768px){
+    .header{
+    display: flex;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    overflow: hidden;
+    background: rgb(31, 25, 206);
+    color: var(--color1);
+    font-family: 'Roboto',sans-serif;
+    justify-content: space-between;
+    }
+} */
+
+
+/* @media screen and (min-width: 992px){
+    .header{
+    display: flex;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    overflow: hidden;
+    background: rgb(226, 11, 190);
+    color: var(--color1);
+    font-family: 'Roboto',sans-serif;
+    justify-content: space-between;
+    }
+} */
+
+
+
+
+
 .mode{
     background-color: white !important;
     color: black !important;
@@ -32,6 +116,10 @@
     font-family: 'Roboto',sans-serif;
     justify-content: space-between;
 }
+
+
+
+
 .logo{
     /* border: var(--border); */
     justify-content: center;
@@ -42,8 +130,12 @@
     font-family: cursive;
     font-size: x-large;
     margin-left: 50px;
+   
     align-items: center;
 }
+
+
+
 .logo a{
     font-family: cursive;
      color: black;
@@ -113,6 +205,8 @@ nav .nav a{
 nav .nav li{
     list-style: none;
 }
+
+
 
 
 
@@ -326,7 +420,7 @@ nav .nav li{
 
 
 #affichage{
-   /*  border: var(--border); */
+  /*   border: 3px solid red; */
     margin-left: 150px;
     width: 475px;
     /* animation: fadeInUp 1s ease-out; */
@@ -336,7 +430,7 @@ nav .nav li{
 .s1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    color: var(--principal)
+    color: var(--principal);
     /* text-transform: uppercase; */
      
 
@@ -820,4 +914,48 @@ footer{
     color: white !important;
     font-weight: bold;
     align-items: center;
+}
+
+
+/*************** Media ***********************/
+
+
+@media screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    z-index: 2000;
+    overflow: hidden;
+    color: var(--color1);
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+  }
+
+  .logo {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30%;
+    font-family: cursive;
+    font-size: medium;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    border: 2px solid gold;
+  }
 }
