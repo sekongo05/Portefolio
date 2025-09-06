@@ -18,15 +18,6 @@
     color: black !important;
 }
 
-@media (max-width: 480px){
-    .header{
-        background-color: aqua;
-    }
-    .header .logo{
-        width: 50px;
-        font-size: medium;
-    }
-}
 
 .header{
     /* border: var(--border); */
