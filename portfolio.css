@@ -923,7 +923,7 @@ footer{
 @media screen and (max-width: 480px) {
   .header {
     display: flex;
-    height: 50px;
+    height: 40px;
     position: fixed;
     top: 0;
     width: 100%;
