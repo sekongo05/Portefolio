@@ -13,90 +13,6 @@
     --principal: rgb(108, 183, 237);
 }
 
-
-/* @media screen and (max-width: 480px){
-    .header{
-    display: flex;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2000;
-    overflow: hidden;
-    background: rgb(136, 133, 133);
-    color: var(--color1);
-    font-family: 'Roboto',sans-serif;
-    justify-content: space-between;
-    }
-} */
-/* @media screen and (max-width: 600px){
-    .header{
-    display: flex;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2000;
-    overflow: hidden;
-    background: rgb(155, 27, 27);
-    color: var(--color1);
-    font-family: 'Roboto',sans-serif;
-    justify-content: space-between;
-    }
-} */
-/* @media screen and (min-width: 600px){
-    .header{
-    display: flex;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2000;
-    overflow: hidden;
-    background: rgb(31, 25, 206);
-    color: var(--color1);
-    font-family: 'Roboto',sans-serif;
-    justify-content: space-between;
-    }
-}
- */
-/* @media screen and (min-width: 768px){
-    .header{
-    display: flex;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2000;
-    overflow: hidden;
-    background: rgb(31, 25, 206);
-    color: var(--color1);
-    font-family: 'Roboto',sans-serif;
-    justify-content: space-between;
-    }
-} */
-
-
-/* @media screen and (min-width: 992px){
-    .header{
-    display: flex;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2000;
-    overflow: hidden;
-    background: rgb(226, 11, 190);
-    color: var(--color1);
-    font-family: 'Roboto',sans-serif;
-    justify-content: space-between;
-    }
-} */
-
-
-
-
-
 .mode{
     background-color: white !important;
     color: black !important;
@@ -157,8 +73,9 @@ nav .nav{
     width: 600px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
+    text-transform: capitalize;
     height: 100px;
-   
+   /* border: 2px solid red; */
     margin-left: 300px;
    /*  border: var(--border); */
 }
@@ -178,12 +95,22 @@ nav .nav li:hover{
     align-items: center;
 }
 .header .p .img{
-    width: 50px;
+    width: 40px;
     /* box-shadow: 0 4px 6px rgb(108, 183, 237); */
     color: white;
     cursor: pointer;
-    
 }
+
+.header .p_mobile {
+   /*  border: 3px solid red; */
+    width: 50px;
+    display: none;
+}
+.header .p_mobile .img2{
+    color: white;
+    cursor: pointer; 
+}
+
 
 nav .nav .contact{
     border: 1px solid rgb(108, 183, 237);
@@ -579,7 +506,7 @@ nav .nav li{
 }
 
 
-/***********************************************************/
+/******************** Body 3***************************************/
 
 .body3{
      width: 100%;
@@ -758,6 +685,9 @@ nav .nav li{
     font-size: 25px;
 }
 
+.body4 .titre p:hover{
+    color:rgb(108, 183, 237);
+}
 
 .body4 .titre p{
    cursor: pointer;
@@ -832,6 +762,22 @@ nav .nav li{
     border: 1px solid var(--principal);
    
 }
+.body4 .projet-main .main .pr2{
+    width: 348px;
+    height: 200px;
+    background: url('images/Capture\ d’écran_4-9-2025_152032_.jpeg');
+    background-size: cover;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    background-position: center;
+    border: 1px solid var(--principal);
+   
+}
+
+
+
+
+
 .body4 .projet-main .main .ti{
     width: 350px;
     height: 50px;
@@ -913,49 +859,177 @@ footer{
     display: flex;
     color: white !important;
     font-weight: bold;
+    width: 100%;
     align-items: center;
 }
 
 
 /*************** Media ***********************/
 
-
-@media screen and (max-width: 480px) {
+/* 
+@media screen and (max-width: 375px) {
   .header {
     display: flex;
     height: 40px;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 5px;
-    z-index: 2000;
-    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 2000; 
+    border: 2px solid red;
     color: var(--color1);
     font-family: 'Roboto', sans-serif;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .logo {
-   
     display: flex;
     justify-content: center;
     align-items: center;
+     border: 2px solid rgb(23, 89, 202);
     font-weight: bold;
     cursor: pointer;
-    width: 30%;
+    width: 50%;
+    padding: 0;
     font-family: cursive;
     font-size: medium;
   }
 
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 5px;
-    height: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
-    border: 2px solid gold;
+nav{
+    display: none;
+    width: 0;
+    border: 2px solid red;
   }
+
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
+
+
+.header .p {
+    border: 3px solid rgb(239, 129, 11);
+    display: flex;
+    margin-right: 0; 
+    justify-content: right;
+    
+}
+.header .p .img2{
+    width: 30px;
+    color: white;
+    cursor: pointer;
+    
+    
+}
+.header .p_mobile {
+    display: flex;
+    justify-content: right;
+    width: 33%;
+    border: 2px solid rgb(255, 0, 85);
+     margin-right: 0;
+    align-items: center;
+   
+}
+
+.header .p_mobile .img2{
+     width: 30px;
+     height: 30px;
+}
+
+.body1{
+    border: 3px solid rgb(39, 223, 22);
+    height:calc(100vh - 100px);
+    display: flex;  
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    margin-top: 40px;
+    color: var(--color1);
+    background: var(--color2);
+    
+}
+.texte{
+    border: 3px solid rgb(130, 127, 113);
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+
+    font-size: large;
+}
+.t{
+    display: flex;
+    font-size: 25px;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+   justify-content: center;
+    height: 100px;
+    border: 3px solid red;
+}
+
+
+.body1 .texte .t .nom{
+    text-transform: capitalize;
+    color: var(--principal);
+    font-weight: bold;
+    font-size: 37px;
+}
+
+
+#affichage{
+    border: 3px solid rgb(34, 94, 159);
+    width:100%;
+    padding-left: 20%;
+    font-size: 30px;
+    height: 100px;
+}
+
+.body1 .picture{
+    display: none;
+}
+
+.body1 .texte .contact{
+    display: flex;
+    border: var(--border);
+    width: 400px;
+    margin-top: 0px;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+}
+
+.cv{
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px var(--principal);
+    margin-top: 20px;
+
+}
+
+
+
+
+
+ 
+
+
+
+
+}
+ */

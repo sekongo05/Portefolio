@@ -58,16 +58,19 @@ window.addEventListener('scroll',()=>{
     };
 })
 
-const contenu=document.querySelector('.contenu');
+const contenu=document.querySelectorAll('.contenu');
 const cont=document.querySelector('.contenu2');
 const dev= document.querySelector('.dev');
 
 
 dev.addEventListener('click', ()=>{
-    contenu.classList.toggle('afficher');
-    if(contenu.classList.contains('afficher')){
-        cont.classList.add('forve')
-} 
+    contenu.forEach(contenue => {
+        
+        contenue.classList.toggle('afficher');
+        if(contenue.classList.contains('afficher')){
+            cont.classList.add('forve')
+        } 
+    });
 
 /* else{
     cont.classList.remove('forve')
@@ -111,33 +114,6 @@ img.addEventListener('click', ()=>{
     }
      modeActif = !modeActif;
 })
-
-
-
-
-
-
-
-
-
-
-const isMobile = window.matchMedia("(max-width: 480px)").matches;
-if (isMobile) {
-  console.log("Affichage mobile actif !");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
