@@ -674,7 +674,7 @@ nav .nav li{
 }
 
 .body3 .competence-contain .competence-contain2{
-   /*  border: var(--border); */
+  
     display: flex;
    width: 50%;
    animation: anim2 2s ease-out;
