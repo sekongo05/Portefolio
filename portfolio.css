@@ -324,13 +324,17 @@ nav .nav li{
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    background: url('images/WhatsApp\ Image\ 2025-08-30\ à\ 16.10.16_c2324d51.jpg');
+    background: url('images/dd.png');
     background-position: center;
     background-size: cover;
-    transition: transform 0.3s ease; 
+   
     animation: cercle 3s ease-out;
 }
-
+.body1 .cercle:hover{
+    box-shadow:   4px 4px 10px 1px var(--color1);
+    scale: .95;
+    transition: 2s ease-out;
+}
 .transform{
     transform: translateY(5px);
     
@@ -398,8 +402,8 @@ nav .nav li{
 }
 
 .cv:hover{
-     width: 302px;
-     height: 51px;
+     scale: 1.1;
+     transition: 1s ease-in-out
 }
 .cv p img{
     width: 30px;
@@ -506,6 +510,10 @@ nav .nav li{
     border-radius: 10px;
     animation: anim2 2s ease-out;
     transition: all 2s ease-in-out;
+}
+
+.body2 .propos .picture2 .pic:hover{
+    scale: .9;
 }
 
 .body2 .propos .contain{
@@ -669,7 +677,7 @@ nav .nav li{
 
 .body3 .competence-contain .competence-contain1 div img:hover{
      width: 130px;
-     transition: all 1s ease-in;
+     transition: all .3s ease-out;
     height: 130px;
 }
 
@@ -708,7 +716,7 @@ nav .nav li{
 }
 .body3 .competence-contain .competence-contain2 div img:hover{
      width: 130px;
-     transition: all 1s ease-in;
+     transition: all .3s ease-out;
     height: 130px;
 }
 
@@ -751,7 +759,6 @@ nav .nav li{
     font-weight: bold;
     /* border: var(--border); */
     justify-content: center;
-    
     align-items: center;
     display: flex;
     gap: 800px;
@@ -775,10 +782,10 @@ nav .nav li{
 
 .body4 .projet-main .main{
     display: flex;
-    /* border: var(--border); */
+   /*  border: var(--border); */
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     width: 85%;
     height: 400px;
 }
@@ -786,15 +793,23 @@ nav .nav li{
     
     border: 1px solid var(--principal);
     border-radius: 10px;
-    display: none;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
      animation: anim5 2s ease-in;
      width: 350px;
+     box-shadow: 2px 2px 3px var(--color1);
      transition: all 1s ease-in-out;
-    height: 350px;
+    height: 400px;
 }
+
+
+.body4 .projet-main .main .contenu:hover{
+    scale: .9;
+    box-shadow: 5px 2px 3px var(--color1);
+}
+
 .afficher{
    
     display: flex !important;
@@ -823,7 +838,7 @@ nav .nav li{
 
 .body4 .projet-main .main .pr1{
     width: 348px;
-    height: 200px;
+    height: 300px;
     background: url('images/x.png');
     background-size: cover;
     border-top-left-radius:10px ;
@@ -832,20 +847,26 @@ nav .nav li{
     border: 1px solid var(--principal);
    
 }
+
+
+
+
 .body4 .projet-main .main .ti{
     width: 350px;
-    height: 50px;
+    height: 80px;
     display: flex;
-    font-size: 25px;
+    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
+     border: var(--border);
+     text-align: center;
     align-items: center;
 }
 
 .body4 .projet-main .main .icon{
      width: 350px;
     height: 100px;
-   /*  border: var(--border); */
+    border: var(--border);
     display: flex;
     justify-content: center;
     font-size: 20px;
@@ -871,7 +892,24 @@ nav .nav li{
    
 }
 
-.contenu2{
+
+
+.body4 .projet-main .main .pr2{
+    width: 348px;
+    height: 300px;
+    background: url('images/pppp.jpeg');
+    background-size: cover;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    background-position: center;
+    border: 1px solid var(--principal);
+}
+
+
+
+
+
+/* .contenu2{
      border: 1px solid var(--principal);
     border-radius: 10px;
     display: none;
@@ -881,27 +919,134 @@ nav .nav li{
      width: 350px;
      transition: all 1s ease-in-out;
     height: 350px;
-}
-.forve{
+} */
+/* .forve{
     display: none !;
     opacity: 0;
-}
+} */
     /* .body4 .projet-main .main div:hover{
         box-shadow:  2px 2px 1px var(--principal);
     }
 
  */
- .forve2{
+ /* .forve2{
     display: flex;
- }
- .afficher2{
+ } */
+/*  .afficher2{
     display: flex !important;
  }
+ */
+
+/*******************************************************/
 
 
+.body5{
+    width: 100%;
+    height: 100vh;
+    /*  border: var(--border); */
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+      color: var(--color1);
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.body5 .service{
+    width: 100%;
+    color: var(--principal);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-transform:capitalize;
+    font-weight: bold;
+    /* border: var(--border); */
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    padding-top: 150px;
+    height: 100px;
+ 
+}
+
+.body5 .service-container{
+    /* border: var(--border); */
+    height: 500px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body5 .service-container div{
+    border: var(--border);
+    width: 350px;
+    background-color: rgb(18, 18, 18);
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    box-shadow: 2px 2px 1px white;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
 
 
+.body5 .service-container div:hover{
+    box-shadow: 5px 5px 5px  rgb(108, 183, 237);
+    scale: .9;
+    transition: 1s ease-out;
+    
+}
 
+
+.body5 .service-container div .titres{
+    /* border: var(--border); */
+    margin-bottom: 10px;
+    height: 90px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:  rgb(108, 183, 237);
+    font-size: 50px;
+    
+}
+
+.body5 .service-container div .titres img{
+    text-align: center;
+    width: 90px;
+}
+
+.body5 .service-container div .titre{
+   /*  border: var(--border); */
+    text-align: center;
+    height: 50px;
+    display: flex;
+    font-size: 25px;
+    color:  rgb(108, 183, 237);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+.body5 .service-container div .texte{
+   /*  border: var(--border); */
+    height: 200px;
+    display: flex;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    width: 320px;
+}
 
 /****************************************************/
 
